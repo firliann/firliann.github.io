@@ -1,0 +1,38 @@
+.page-banner {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(asset/BCIe4K.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+  }
+
+  .page-banner .inner-content {
+    padding: 150px 0px;
+    text-align: center;
+  }
+
+  .page-banner .inner-content h2 {
+    font-size: 52px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;;
+    text-shadow: black;
+  }
+
+.page-banner .inner-content span {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+    text-shadow: black;
+  }
+
+  .main-banner .right-content .right-first-image .thumb .hover-content p {
+    color: #fff;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  

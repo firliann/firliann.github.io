@@ -1,0 +1,20 @@
+Mini Project:
+
+- Your page must be responsive to screen size < 576px
+
+- Style all images to have rounded corners
+
+- Add Navbar in each page containing page “Home” for homepage and “About Us” for information about the company
+
+- Create form in the footer of homepage for a feedback form (email, feedback area, submit button)
+
+- Make sure all product thumbnail in homepage is using Bootstrap card. Product thumbnail must contain: a rounded corner images, product name, product price, a button to preview
+
+- When clicking “Preview” button, a modal will appear with the full image of product
+
+- Add Bootstrap Breadcrumbs in “About Us” page
+
+- Use Bootstrap Button in the submit button (feedback form on the footer area)
+
+-Add Success Bootstrap Alert in the top of homepage with text “New Arrival on October 2021, check it out!”
+

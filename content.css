@@ -1,0 +1,72 @@
+.section-heading{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #2a2a2a;
+  }
+  
+  .section-heading span {
+    font-size: 17px;
+    color: #a1a1a1;
+    font-style: italic;
+  }
+  
+ .card {
+     margin: 0px;
+     padding: 20px;
+     border: none !important;
+ }
+
+
+ * img{
+   width: 65%;
+   border-radius: 20px;
+   
+ }
+
+ .item .down-content span{
+   color: dimgray;
+   font-size: 20px;
+   font-weight: 450;
+ }
+
+ .pagination {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.pagination ul {
+  text-align: center;
+  width: 100%;
+}
+
+.pagination ul li {
+  display: inline;
+  margin: 5px;
+}
+
+.pagination ul li a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.pagination ul li a:hover,
+.pagination ul li.active a {
+  background-color: black;
+  color: #fff;
+}
+

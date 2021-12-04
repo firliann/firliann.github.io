@@ -1,0 +1,97 @@
+/* NAV COSTUM */
+.navbar {
+  background-color: white !important;
+  border-bottom: 3.5px solid black;
+}
+  
+
+/*--- SPORTSPEDIA --- */
+h1 {
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+    line-height: 100px;
+}
+
+h1 span {
+    transition: .5s linear
+}
+
+h1:hover span:nth-child(1) {
+    margin-right: 5px
+}
+
+h1:hover span:nth-child(1):after {
+    content: "'";
+}
+
+h1:hover span:nth-child(2) {
+    margin-left: 30px
+}
+
+h1:hover span {
+    color:rgb(9, 14, 0);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* ANOTHER */
+.logo > i {
+    font-style: normal;
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+    line-height: 75px;
+}
+
+.logo > i span {
+    transition: .5s linear
+}
+
+.logo > i:hover span:nth-child(1) {
+    margin-right: 5px
+}
+
+.logo > i:hover span:nth-child(1):after {
+    content: "'";
+}
+
+.logo > i:hover span:nth-child(2) {
+    margin-left: 30px
+}
+
+.logo > i:hover span {
+    color:rgb(9, 14, 0);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+
+
+/* Breadcumb */
+.breadcrumb-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb{
+    display: flex;
+    padding: 1em;
+    justify-content:left;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 10px 35px -25px rgb(0 0 0 / 40%) inset;
+    height: 70px;
+    margin-left: 0;
+}
+
+/* Alert */
+.page-alert {
+    margin-top: 2em;
+    padding: 0px;
+}
+
