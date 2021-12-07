@@ -79,7 +79,8 @@
                             <div>
                                 <p>- JUST PLAY. HAVE FUN. ENJOY THE GAME -</p>
                             </div>
-                            <button class="btn btn-outline-info"> <a href="#" style="text-decoration: none;">SHOP
+                            <button class="btn btn-outline-info" onclick="shopNow(0)"> <a href="#"
+                                    style="text-decoration: none;">SHOP
                                     NOW</a></button>
                         </span>
                     </div>
@@ -242,7 +243,7 @@
                             placeholder="By the way, whats is your opinion about SportsPedia?"></textarea>
 
                     </div>
-                    <button class="btn btn-primary" type="submit" onclick="">Send it!</button>
+                    <button class="btn btn-primary" type="submit" onclick="SendFeedback(0)">Send it!</button>
                 </div>
                 <div class="col-6">
                     <h4>HEY,</h4>
@@ -268,7 +269,7 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal Preview Product -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -280,6 +281,34 @@
                     <img id="modalImagePreview" src="asset/ortus_preserver_gk_gloves_blue_zest_green_-1.jpg" alt="">
                     <br>
                     <span id="priceTag"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ShopNow -->
+    <div class="modal fade" id="exampleShop" tabindex="-1" aria-labelledby="exampleShopLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleShopLabel"></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SendFeedback -->
+    <div class="modal fade" id="exampleSendFeedback" tabindex="-1" aria-labelledby="exampleFeedbackLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleFeedbackLabel"></h5>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -325,6 +354,14 @@
             'Rp599.000'
         ]
 
+        let keranjang = [
+            'Your cart is empty, order now!'
+        ]
+
+        let feedback = [
+            'Thank you for your feedback'
+        ]
+
 
         function openImagePreview(index) {
             $("#exampleModal").modal("show")
@@ -332,6 +369,20 @@
             $('#priceTag').text(price[index]);
             document.getElementById("modalImagePreview").src = url[index];
         }
+
+        function shopNow(index) {
+            $("#exampleShop").modal("show")
+            $('#exampleShopLabel').text(keranjang[index]);
+            document.getElementById("modalShopLabel")
+        }
+
+        function SendFeedback(index) {
+            $("#exampleSendFeedback").modal("show")
+            $('#exampleFeedbackLabel').text(feedback[index]);
+            document.getElementById("modalFeedbackLabel")
+
+        }
+
     </script>
 
 </body>
